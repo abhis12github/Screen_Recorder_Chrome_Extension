@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            width: 300px;
+            height: 240px;
+            font-family: Poppins, sans-serif;
+            background: #312e2e;
+            --gap: 5em;
+            --line: 1px;
+            --color: rgba(255, 255, 255, 0.2);
+            color: white;
+
+            background-image: linear-gradient(-90deg,
+                    transparent calc(var(--gap) - var(--line)),
+                    var(--color) calc(var(--gap) - var(--line) + 1px),
+                    var(--color) var(--gap)),
+                linear-gradient(0deg,
+                    transparent calc(var(--gap) - var(--line)),
+                    var(--color) calc(var(--gap) - var(--line) + 1px),
+                    var(--color) var(--gap));
+            background-size: var(--gap) var(--gap);
+
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="font-weight: 400 ; margin-bottom:40px ;">Let's Record</h1>
+
+        <div style="display: flex; flex-direction: row; gap: 25px;">
+            <div style="display: flex; color: white; ">
+                <button id="tab"
+                    style="border: none; gap:10px; color: white; text-align: center; border-radius: 100%; display: flex ; flex-direction: column; align-items: center; justify-content: center; padding:8px 10px; background-color: transparent; cursor: pointer; ">
+                    <i id="tab-icon" style="color: white;" class="fa-regular fa-window-maximize fa-2xl"></i>
+                    <p>Window Tab</p>
+                </button>
+            </div>
+            <div style="display: flex; color: white; ">
+                <button id="screen"
+                    style="border: none; color: white; gap:10px; text-align: center; border-radius: 100%; display: flex ;  flex-direction: column; justify-content: center; align-items: center; padding:8px 10px; background-color: transparent; cursor: pointer; "><i
+                        id="screen-icon" style="color: white;" class="fa-solid fa-display fa-2xl"></i>
+                    <p>Screen </p>
+                </button>
+            </div>
+        </div>
+        <div id="options">
+            <!-- <label for="quality">Select Video Quality:</label> -->
+            <br>
+            <select id="quality"
+                style="background-color: transparent; color: white; border: 1.5px solid rgb(255, 255, 255);font-family: Poppins; padding: 3px; border-radius: 5px;"
+                required>
+                <option value="" style="color: white;" disabled selected hidden>Select quality</option>
+                <option style="color: black; font-size:0.75rem; padding:8px 2px; cursor:pointer;" value="low">Low (480p, 15fps)</option>
+                <option style="color: black; font-size:0.75rem; padding:8px 2px; cursor:pointer;" value="medium">Medium (720p, 30fps)</option>
+                <option style="color: black; font-size:0.75rem; padding:8px 2px; cursor:pointer;" value="high">High (1080p, 60fps)</option>
+            </select>
+        </div>
+
+    </div>
+
+    <script src="popup.js"></script>
+
+
+</body>
+
+</html>
