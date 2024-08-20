@@ -33,7 +33,7 @@ The Screen Recorder Chrome Extension is a powerful tool designed to capture scre
 Clone the Repository
 
 ```bash
-  git clone https://github.com/your-username/screen-recorder-extension.git
+  git clone https://github.com/abhis12github/Screen_Recorder_Chrome_Extension
 
 ```
 Open Chrome Extensions Page
