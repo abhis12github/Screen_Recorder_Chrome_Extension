@@ -54,7 +54,7 @@ Verify Installation:
 ## Future Aspects
 
 * Integration with Google drive to directly upload video to drive.
-* Export as GIF to export the recordingas a GIF file.
+* Export as GIF to export the recording as a GIF file.
 ## Authors
 
 - [Abhishek Anand](https://github.com/abhis12github)
